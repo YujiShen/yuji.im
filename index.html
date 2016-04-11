@@ -6,32 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="generator" content="Hugo 0.15" />
-    <title> Yuji Shen &middot; 沈宇基</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
-    <!--[if lte IE 8]>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
-  <![endif]-->
-    <!--[if gt IE 8]><!-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
-    <!--<![endif]-->
-    <!--[if lte IE 8]>
-  <link rel="stylesheet" href="http://yuji.im/en/css/side-menu-old-ie.css">
-  <![endif]-->
-    <!--[if gt IE 8]><!-->
-    <link rel="stylesheet" href="http://yuji.im/en/css/side-menu.css">
-    <!--<![endif]-->
-    <link rel="stylesheet" href="http://yuji.im/en/css/blackburn.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-    </script>
-    <link rel="alternate" type="application/rss+xml" title="Yuji Shen" href="http://yuji.im/en/index.xml" />
-    <link href="http://yuji.im/en/css/prism.css" rel="stylesheet" />
-    <script src="http://yuji.im/en/js/prism.js">
-    Prism.highlightAll(false);
-    </script>
-    <link rel="apple-touch-icon" href="http://yuji.im/en/img/apple-touch-icon.png">
-    <link rel="shortcut icon" href="http://yuji.im/en/img/favicon.ico" type="image/x-icon" />
+    <title>Yuji Shen &middot; 沈宇基</title>
+    <link rel="stylesheet" type="text/css" href="https://yuji.im/en/css/main-min.css">
+    <link rel="apple-touch-icon" href="https://yuji.im/en/img/apple-touch-icon.png">
+    <link rel="shortcut icon" href="https://yuji.im/en/img/favicon.ico" type="image/x-icon" />
     <style>
     .pure-img {
         margin: 0.5em;
@@ -44,101 +22,164 @@
 
 <body>
     <div id="layout">
-        <a href="#menu" id="menuLink" class="menu-link">
-            <span></span>
-        </a>
-        <div id="menu">
+        <div id="nav">
             <div id="brand">
-                <a class="pure-menu-heading brand" href="http://yuji.im/en/">
-                    <span><img id="logo" src="http://yuji.im/en/img/logo.svg"></span>
-                    <span> </span>
+                <a href="https://yuji.im/en/">
+                    <img id="logo" src="https://yuji.im/en/img/logo.svg">
                 </a>
             </div>
-            <div lang="en" class="pure-menu en">
-                <ul class="pure-menu-list">
-                    <li class="pure-menu-item">
-                        <a class="pure-menu-link" href="http://yuji.im/en/"><i class='fa fa-home fa-fw'></i>Blog</a>
-                    </li>
-                    <li class="pure-menu-item">
-                        <a class="pure-menu-link" href="http://yuji.im/en/about/"><i class='fa fa-user fa-fw'></i>About</a>
-                    </li>
-                    <li class="pure-menu-item">
-                        <a class="pure-menu-link" href="http://yuji.im/en/portfolio/"><i class='fa fa-suitcase fa-fw'></i>Portfolio</a>
-                    </li>
-                </ul>
-            </div>
-            <div lang="zh-Hans" class="pure-menu cn">
-                <ul class="pure-menu-list">
-                    <li class="pure-menu-item">
-                        <a class="pure-menu-link" href="http://yuji.im/cn/" style="line-height:1.2"><i class='fa fa-home fa-fw'></i>博客</a>
-                    </li>
-                    <li class="pure-menu-item">
-                        <a class="pure-menu-link" href="http://yuji.im/cn/about/" style="line-height:1.2"><i class='fa fa-user fa-fw'></i>关于</a>
-                    </li>
-                    <li class="pure-menu-item">
-                        <a class="pure-menu-link" href="http://yuji.im/en/portfolio/" style="line-height:1.2"><i class='fa fa-suitcase fa-fw'></i>作品</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="pure-g copyright">
-                <div class="pure-u-1 pure-u-md-1-1">
-                    <small>&copy; 2016<a href="http://yuji.im/en/">Yuji Shen</a></small>
+            <a href="#nav" id="nav-link" class="nav-link"><span></span></a>
+            <div class="nav-inner">
+                <div id="nav-nav">
+                    <div id="top">
+                        <a href="#header" class="pure-u-1-3  pure-menu-link"><i class="icon-up"></i></a>
+                    </div>
+                    <div id="left-toc-right">
+                        <a href="" class="unlink pure-u-1-3 pure-menu-link"><i class="icon-left"></i></a>
+                        <a href="#toc" id="toc_toggle_link" class="unlink pure-u-1-3  pure-menu-link"><i class="icon-list"></i></a>
+                        <a href="" class="unlink pure-u-1-3 pure-menu-link"><i class="icon-right"></i></a>
+                    </div>
+                    <div id="bottom">
+                        <a href="#copyright" class="pure-u-1-3 pure-menu-link"><i class="icon-down"></i></a>
+                    </div>
                 </div>
-                <div class="pure-u-1 pure-u-md-1-1">
-                    <small>Powered by<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+                <div lang="en" class="pure-menu blog-item">
+                    <ul class="pure-menu-list">
+                        <li class="pure-menu-item">
+                            <a class="pure-menu-link" href="https://yuji.im/en/"><i class='icon-home'></i> Blog</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a class="pure-menu-link" href="https://yuji.im/en/about/"><i class='icon-user'></i> About</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a class="pure-menu-link" href="https://yuji.im/en/portfolio/"><i class='icon-suitcase'></i> Portfolio</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="pure-u-1 pure-u-md-1-1">
-                    <small>Theme by<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+                <div lang="zh-Hans" class="pure-menu self-item">
+                    <ul class="pure-menu-list">
+                        <li class="pure-menu-item">
+                            <a class="pure-menu-link" href="https://yuji.im/cn/"><i class='icon-home'></i> 博客</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a class="pure-menu-link" href="https://yuji.im/cn/about/"><i class='icon-user'></i> 关于</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a class="pure-menu-link" href="https://yuji.im/cn/portfolio/"><i class='icon-suitcase'></i> 作品</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="pure-u-1 pure-u-md-1-1">
-                    <small>Color Scheme<a href="http://ethanschoonover.com/solarized" target="_blank">Solarized</a></small>
+                <div class="pure-menu social">
+                    <a class="pure-u-1-2 pure-menu-link" href="https://github.com/yujishen" target="_blank"><i class="icon-github-squared"></i></a>
+                    <a class="pure-u-1-2 pure-menu-link" href="https://linkedin.com/in/yujishen" target="_blank"><i class="icon-linkedin-squared"></i></a>
                 </div>
             </div>
         </div>
         <div id="main">
-            <div lang="en">
-                <div class="header">
-                    <h1>Yuji Shen</h1>
+            <div id="content-wrapper">
+                <div lang="en">
+                    <div id="header" class="header">
+                        <h1>Yuji Shen</h1>
+                    </div>
+                    <div class="content">
+                        <img class="pure-img pure-u-1-3" src="haha_.jpg" align="right">
+                        <p>
+                            I’m a graduate student from University of Pittsburgh, where I got my Master’s Degree in Information Science. With an interest in Data Science, I devoted my last two years to learn the basics, and hope to find a related job. But after a long time job searching, I failed.</p>
+                        <p>
+                            Without a solid quantitative background, it is relatively hard for me to fully understand some concepts and advanced topics. I tried to make this up by taking some Probability and Statistics courses, but not very successful. Recruiters seem know my situation, so my applications got rare feedbacks, let alone interviews.</p>
+                        <p>
+                            Now I shift my gear to programming, which I am also interested and did better. Even though, I found myself still staying on the surface, just like I learnt those math stuffs. I decide to change that by building my blog to replace my portfolio site. I think what I know is more important than what I did. I will not stop practicing, instead I will open my mind, read more, practice more and share more. Because I believe:</p>
+                        <blockquote>
+                            <p>You can't connect the dots looking forward; you can only connect them looking backward.
+                            </p>
+                            <cite>--Steve Jobs</cite>
+                        </blockquote>
+                    </div>
                 </div>
-                <div class="content">
-                    <img class="pure-img pure-u-1-3" src="haha_.jpg" align="right">
-                    <p>
-                        I'm a new grad from University of Pittsburgh with a Master's Degree in Information Science, and looking for entry-level full-time positions: Data Scientist / Data Analyst / Data Science related Developer. I love machine learning and computer science, so I keep learning and reinforcing these knowlegde and techniques by taking MOOCs, doing projects and participating data science competitions.
-                    </p>
-                    <p>I like to improve my productivity by utilizing techniques (GTD, pomodoro) and tools (OmniFocus, aTimelogger, etc.) in my everyday life. I dedicate to digital my life and use Evernote to organize my materials. I do not share too much right now, but I hope to gradually build my blog in the future.
-                    </p>
+                <div lang="zh-Hans">
+                    <div class="header">
+                        <h1>沈宇基</h1>
+                    </div>
+                    <div class="content">
+                        <p>
+                            中文还在建设中。。。
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div lang="zh-Hans">
-                <div class="header">
-                    <h1>沈宇基</h1>
-                </div>
-                <div class="content">
-                    <img class="pure-img pure-u-1-3" src="hehe_.jpg" align="right">
-                    <p>
-                        中文还在建设中。。。
-                    </p>
-                </div>
+            <div id="copyright">
+                <span>
+    <small>&copy; 2016<a href="https://yuji.im/en/"> Yuji Shen | </a></small>
+  </span>
+                <span>
+    <small>Powered by <a href="https://gohugo.io/" target="_blank">Hugo | </a></small>
+  </span>
+                <span>
+    <small>Theme by<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank"> Blackburn | </a></small>
+  </span>
+                <span>
+    <small>Color Scheme<a href="http://ethanschoonover.com/solarized" target="_blank"> Solarized</a></small>
+  </span>
             </div>
         </div>
     </div>
-    <script src="http://yuji.im/en/js/ui.js"></script>
-    <script>
-    (function(i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function() {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    <script type="text/javascript">
+    window.onload = function() {
+        var toc = document.querySelector('#toc');
+        var toc_toggle_link = document.querySelector('#toc_toggle_link');
+        var nav = document.querySelector('#nav');
+        var nav_link = document.querySelector('#nav-link');
+        var mq = window.matchMedia("(min-width: 40em)");
 
+        nav_link.onclick = function(e) {
+            e.stopPropagation();
+            nav.classList.toggle('active');
+            nav_link.classList.toggle('active');
+            if (toc.classList.contains('active')) {
+                toc.classList.toggle('active');
+            }
+        }
+
+        if (!(toc === null)) {
+            var toc_links = toc.getElementsByTagName('a');
+            toc_toggle_link.onclick = function(e) {
+                e.stopPropagation();
+                toc.classList.toggle('active');
+                if (!mq.matches) {
+                    nav.classList.toggle('active');
+                    nav_link.classList.toggle('active');
+                }
+            }
+            toc.onclick = function(e) {
+                e.stopPropagation();
+                toc.classList.toggle('active');
+            }
+
+            document.onclick = function(e) {
+                if (e.target.id != 'toc' && e.target.id != 'toc_toggle_link') {
+                    if (toc.classList.contains('active')) {
+                        toc.classList.toggle('active');
+                    }
+                }
+                if (e.target.id != 'nav' && e.target.id != 'nav-link') {
+                    if (nav.classList.contains('active')) {
+                        nav.classList.toggle('active');
+                        nav_link.classList.toggle('active');
+                    }
+                }
+            }
+        }
+    };
+    </script>
+    <script>
+    window.ga = window.ga || function() {
+        (ga.q = ga.q || []).push(arguments)
+    };
+    ga.l = +new Date;
     ga('create', 'UA-59613226-1', 'auto');
     ga('send', 'pageview');
     </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
 </body>
 
 </html>
